@@ -38,7 +38,7 @@ module "vpc" {
     Environment = "dev"
 
 	}					 
-										 
+	}									 
    
  
 
@@ -88,5 +88,5 @@ eks_managed_node_groups = {
   }
 
   tags = local.tags
-}
+
 }
