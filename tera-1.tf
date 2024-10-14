@@ -68,7 +68,7 @@ module "vpc" {
 
   # EKS Managed Node Group(s)
   eks_managed_node_group_defaults = {
-    ami_type       = "ami-0b0ea68c435eb488d"
+    ami_type       = "AL2_x86_64"
     instance_types = ["t2.medium"]
 
     attach_cluster_primary_security_group = true
