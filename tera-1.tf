@@ -89,3 +89,4 @@ eks_managed_node_groups = {
 
   tags = local.tags
 }
+}
