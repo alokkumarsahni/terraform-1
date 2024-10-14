@@ -36,17 +36,16 @@ module "vpc" {
     Terraform = "true"
     Environment = "dev"
   }
-}
 
-vpc_id                   = module.vpc.vpc_id
+
+  vpc_id                   = module.vpc.vpc_id
   subnet_ids               = module.vpc.private_subnets
   control_plane_subnet_ids = module.vpc.private_subnets
-
+}
   # EKS Managed Node Group(s)
   eks_managed_node_group_defaults = {
     ami_type       = "ami-0b0ea68c435eb488d"
     instance_types = ["t2.medium"]
 
     attach_cluster_primary_security_group = true
-  }
-
+}
